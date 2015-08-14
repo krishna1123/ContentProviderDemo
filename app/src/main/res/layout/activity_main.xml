@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnGetCount"
+        android:layout_width="wrap_content"
+        android:text="GetCount"
+        android:onClick="getCount"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/btnGetItems"
+        android:onClick="getItems"
+        android:text="GetItems"
+        android:layout_below="@+id/btnGetCount"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@+id/btnGetItems"
+        android:layout_width="wrap_content"
+        android:id="@+id/btnInsertItem"
+        android:text="InsertItem"
+        android:onClick="insertItems"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@+id/btnInsertItem"
+        android:layout_width="wrap_content"
+        android:text="DeleteItem"
+        android:id="@+id/btnDeleteItems"
+        android:onClick="deleteItems"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_below="@+id/btnDeleteItems"
+        android:layout_width="wrap_content"
+        android:id="@+id/btnUpdateItems"
+        android:onClick="updateItems"
+        android:text="UpdateItem"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
