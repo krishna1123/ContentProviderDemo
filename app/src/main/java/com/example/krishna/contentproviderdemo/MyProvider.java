@@ -20,7 +20,7 @@ import android.util.Log;
 public class MyProvider extends ContentProvider {
 
     private static final String AUTHORITY="com.example.krishna.contentproviderdemo";
-    public static final Uri CONTENT_URI=Uri.parse("content://"+AUTHORITY+"/items");
+    public static final Uri CONTENT_URI=Uri.parse("content://"+AUTHORITY+"/items");//content://com.example.krishna.contentproviderdemo/items
     private static final UriMatcher uriMatcher;
     private static final int ITEMS=1;
     private static final int ITEM_ID=2;
